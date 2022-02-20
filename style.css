@@ -1,0 +1,28 @@
+
+
+
+.inputFieldSize {
+    width: 40%;
+}
+
+.listFieldSize {
+    width: 40%;
+}
+
+span {
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .inputFieldSize {
+      width: 70%;
+    }
+
+    .listFieldSize {
+        width: 70%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-secondary">TO DO LIST</h1>
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="input-group mb-3 inputFieldSize">
+                <input type="text" class="form-control" id="inputValue" placeholder="Enter new list" aria-label="Recipient's username" aria-describedby="addListButton">
+                <button class="btn btn-primary" type="button" id="addListButton"><i class="bi bi-file-earmark-plus fs-4"></i></button>
+            </div> 
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <ul class="list-group  listFieldSize"  id="unorderListBody">
+                <!-- <div class="todo">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-1 border rounded">
+                        A list item
+                          <div class="d-flex justify-content-center align-items-center">
+                              <i class="bi bi-file-earmark-check-fill text-success fs-5 me-4"></i>
+                              <i class="bi bi-trash-fill text-danger fs-5"></i>
+                          </div>
+                      </li>
+                </div> -->
+                <!-- <div class="todo">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                        A second list item
+                          <i class="bi bi-trash-fill text-danger fs-5"></i>
+                      </li>
+                </div>
+                
+                <div class="todo">
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                        A third list item
+                          <i class="bi bi-trash-fill text-danger fs-5"></i>
+                      </li>
+                </div> -->
+                
+            </ul>
+        </div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
