@@ -17,6 +17,10 @@ i {
     cursor: pointer;
 }
 
+/* .cIcon, .tIcon {
+    pointer-events: none;
+} */
+
 @media only screen and (max-width: 600px) {
     .inputFieldSize {
       width: 70%;
