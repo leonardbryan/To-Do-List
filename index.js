@@ -7,15 +7,47 @@
 
     listBody.addEventListener('click', (e) => {
         const  listItem = e.target;
-        console.log(listItem.classList[1])
+        
         if(listItem.classList[1] === 'bi-trash-fill'){
             let todo = listItem.parentElement
             let todoParent = todo.parentElement
             let todoGrandParent = todoParent.parentElement
+            // todoGrandParent.classList.add('deleteAnimate')
+            // todoGrandParent.addEventListener('transitioned' , function(){
+            //     todoGrandParent.remove()
+            // })
+            let toastLiveExample = document.getElementById('liveToastRemove')
+            let toast = new bootstrap.Toast(toastLiveExample)
+    
+            toast.show()
+
+            todoGrandParent.remove()
+        }
+
+        if(listItem.classList[1] === 'bi-file-earmark-check-fill'){
+            let todo = listItem.parentElement
+            let todoParent = todo.parentElement
+            let todoGrandParent = todoParent.parentElement
+
+            let toastLiveExample = document.getElementById('liveToastSuccess')
+            let toast = new bootstrap.Toast(toastLiveExample)
+    
+            toast.show()
+
             todoGrandParent.remove()
         }
         
     })
+
+    var toastTrigger = document.getElementById('liveToastBtn')
+    var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+    
+        toast.show()
+      })
+    }
 
     addButton.addEventListener('click', (e) => {
         if(inputValue.value != ""){
@@ -66,3 +98,6 @@
         }
         
     })
+
+
+

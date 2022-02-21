@@ -9,6 +9,7 @@
     width: 40%;
 }
 
+
 span {
     cursor: pointer;
 }
@@ -16,10 +17,6 @@ span {
 i {
     cursor: pointer;
 }
-
-/* .cIcon, .tIcon {
-    pointer-events: none;
-} */
 
 @media only screen and (max-width: 600px) {
     .inputFieldSize {
