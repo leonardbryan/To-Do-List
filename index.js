@@ -27,15 +27,20 @@
         }
 
         if(listItem.classList[1] === 'bi-file-earmark-check-fill'){
+            console.log(listItem.classList[1])
             let todo = listItem.parentElement
             let todoParent = todo.parentElement
             let todoGrandParent = todoParent.parentElement
 
-            let toastLiveExample = document.getElementById('liveToastSuccess')
-            let toast = new bootstrap.Toast(toastLiveExample)
-    
-            toast.show()
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Done list. Good Job!',
+                showConfirmButton: false,
+                timer: 2000
+              })
 
+            removedSaveData(todo)
             todoGrandParent.remove()
         }
         
