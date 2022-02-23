@@ -1,0 +1,20 @@
+{
+    "name": "TODO LIST",
+    "short_name": "T-PWA",
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/list192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/list512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

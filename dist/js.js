@@ -1,6 +1,4 @@
 
-
-
     let inputValue = document.getElementById('inputValue')
     let addButton = document.getElementById('addListButton')
     let listBody = document.getElementById('unorderListBody')
@@ -45,13 +43,13 @@
         }
         
     })
-
+    
     var toastTrigger = document.getElementById('liveToastBtn')
     var toastLiveExample = document.getElementById('liveToast')
     if (toastTrigger) {
       toastTrigger.addEventListener('click', function () {
         var toast = new bootstrap.Toast(toastLiveExample)
-    
+        
         toast.show()
       })
     }
@@ -190,6 +188,3 @@
 
         console.log(todo)
     }
-
-
-
